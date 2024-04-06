@@ -14,18 +14,8 @@ function List() {
     }, []);
     
     return (
-
         <div className="w-full h-full flex flex-col items-center">
             
-            <div className="mb-3 flex flex-row align-items-start w-full justify-between">
-                
-                <h1 className="font-bold" style={{fontSize:'1.5rem', marginLeft:'3rem'}}>Contraseñas guardadas</h1>
-                <button className="bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline " style={{marginRight: '3rem'}}> Agregar </button>
-
-            </div>
-
-            <div className="flex w-full border border-t-2 border-t-black"></div>
-
             <div id="list_parent" className="flex flex-wrap gap-4 p-6  justify-self-center justify-center text-lg font-serif w-75 ">
                 {
                     jsonData.map((item, i) => (
