@@ -6,8 +6,8 @@ function List() {
     const [jsonData, setJsonData] = useState([]);
 
     useEffect(() => {
-        // Fetch JSON data from localhost server
-        fetch('http://localhost:3001/datos')
+        // Fetch JSON data from server
+        fetch('/datos')
         .then(response => response.json())
         .then(data => setJsonData(data))
         .catch(error => console.error('Error fetching data:', error));
